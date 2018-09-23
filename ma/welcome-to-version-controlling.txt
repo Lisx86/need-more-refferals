@@ -1,0 +1,2 @@
+Hi, this is an ordinary file, which can have change history and backup on the server. 
+You'll find bugs a lot easier and  neveer loose your code again :)
