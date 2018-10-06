@@ -2,17 +2,12 @@
 using namespace std;
 int main()
 {
-    int a;
-    cout << "Vvedite cislo" << endl;
-    cin >> a;
-    int b;
-    cout << "Vvedite cislo" << endl;
-    cin >> b;
+    float n;
+    cout << "Vvedite tsenu 1 kg konfet" << endl;
+    cin >> n;
 
-    int k = 0;
-    for (int i = a; i <= b; i++){
-        cout << i << ", ";
-        k++;
+    for (int k = 1; k <= 10; k++){
+        float x = n * k;
+        cout << k << " kg = " << x << " leev" << endl;
     }
-    cout << endl << endl << k << " cisla" ;
 }
