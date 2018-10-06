@@ -2,83 +2,74 @@
 using namespace std;
 int main()
 {
-    int m;
-    cout << "Vvedite masti" << endl;
-    cout << "1: Pika" << endl;
-    cout << "2: Tref" << endl;
-    cout << "3: Bubna" << endl;
-    cout << "4: Cirva" << endl << endl;
-    cin >> m;
+        int v;
+        cout << "Vvedite vozrast : " << endl;
+        cin >> v;
 
-    int n;
-    cout << "Vvedite dostoinstvo" << endl;
-    cout << "11: Valet" << endl;
-    cout << "12: Dama" << endl;
-    cout << "13: Koroli" << endl;
-    cout << "14: Tuz" << endl << endl;
-    cin >> n;
-
-    if ((m == 1) && (n == 11)){
-            cout << "Pikovyi valet" << endl;
+        if (v / 10 == 2){
+            cout << "Twenty ";
+            goto vozrast;
         }
 
-    if ((m == 1) && (n == 12)){
-            cout << "Pikovaia dama" << endl;
+        if (v / 10 == 3){
+            cout << "Thirty ";
+            goto vozrast;
         }
 
-    if ((m == 1) && (n == 13)){
-            cout << "Pikovyi koroli" << endl;
+        if (v / 10 == 4){
+            cout << "Forty ";
+            goto vozrast;
         }
 
-    if ((m == 1) && (n == 14)){
-            cout << "Pikovyi tuz" << endl;
+        if (v / 10 == 5){
+            cout << "Fifty ";
+            goto vozrast;
         }
 
-    if ((m == 2) && (n == 11)){
-            cout << "Trefovyi valet" << endl;
+        if (v / 10 == 6){
+            cout << "Sixty ";
+            goto vozrast;
         }
 
-    if ((m == 2) && (n == 12)){
-            cout << "Trefovaia dama" << endl;
+    vozrast:
+        if (v % 10 == 0) {
+            cout << " " << endl;
         }
 
-    if ((m == 2) && (n == 13)){
-            cout << "Trefovyi koroli" << endl;
+        if (v % 10 == 1) {
+            cout << "one" << endl;
         }
 
-    if ((m == 2) && (n == 14)){
-            cout << "Trefovyi tuz" << endl;
+        if (v % 10 == 2) {
+            cout << "two" << endl;
         }
 
-    if ((m == 3) && (n == 11)){
-            cout << "Bubnovyi valet" << endl;
+        if (v % 10 == 3) {
+            cout << "three" << endl;
         }
 
-    if ((m == 3) && (n == 12)){
-            cout << "Bubnovaia dama" << endl;
+        if (v % 10 == 4) {
+            cout << "four" << endl;
         }
 
-    if ((m == 3) && (n == 13)){
-            cout << "Bubnovyi koroli" << endl;
+        if (v % 10 == 5) {
+            cout << "five" << endl;
         }
 
-    if ((m == 3) && (n == 14)){
-            cout << "Bubnovyi tuz" << endl;
+        if (v % 10 == 6) {
+            cout << "six" << endl;
         }
 
-    if ((m == 4) && (n == 11)){
-            cout << "Cirvovyi valet" << endl;
+        if (v % 10 == 7) {
+            cout << "seven" << endl;
         }
 
-    if ((m == 4) && (n == 12)){
-            cout << "Cirvovaia dama" << endl;
+        if (v % 10 == 8) {
+            cout << "eight" << endl;
         }
 
-    if ((m == 4) && (n == 13)){
-            cout << "Cirvovyi koroli" << endl;
-        }
-
-    if ((m == 4) && (n == 14)){
-            cout << "Cirvovyi tuz" << endl;
+        if (v % 10 == 9) {
+            cout << "nine" << endl;
         }
 }
+
