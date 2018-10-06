@@ -1,51 +1,84 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 int main()
 {
-    int a;
-    cout << "Vvedite storonu treugolinica: ";
-    cin >> a;
+    int m;
+    cout << "Vvedite masti" << endl;
+    cout << "1: Pika" << endl;
+    cout << "2: Tref" << endl;
+    cout << "3: Bubna" << endl;
+    cout << "4: Cirva" << endl << endl;
+    cin >> m;
 
-    int r1 = a*sqrt(3)/6;
-    int r2 = 2*r1;
-    int s = a*a*sqrt(3)/4;
+    int n;
+    cout << "Vvedite dostoinstvo" << endl;
+    cout << "11: Valet" << endl;
+    cout << "12: Dama" << endl;
+    cout << "13: Koroli" << endl;
+    cout << "14: Tuz" << endl << endl;
+    cin >> n;
 
-    int x;
-    cout << "Vyberite deistvie: 1, 2, 3, 4" << endl;
-    cin >> x;
+    if ((m == 1) && (n == 11)){
+            cout << "Pikovyi valet" << endl;
+        }
 
-switch(x){
-case 1:
-    {
-        cout << "Storona treugolinica = " << a << endl;
-        cout << "Radius vpisannoi okrujnosti = " << r1 << endl;
-        cout << "Radius opisannoi okrujnosti = " << r2 << endl;
-        cout << "Ploseadi treugolinica = " << s << endl;
-         break;
-    }
+    if ((m == 1) && (n == 12)){
+            cout << "Pikovaia dama" << endl;
+        }
 
-case 2:
-    {
-        cout << "Radius vpisannoi okrujnosti = " << r1 << endl;
-        cout << "Radius opisannoi okrujnosti = " << r2 << endl;
-        cout << "Ploseadi treugolinica = " << s << endl;
-         break;
-    }
+    if ((m == 1) && (n == 13)){
+            cout << "Pikovyi koroli" << endl;
+        }
 
-case 3:
-    {
-        cout << "Radius opisannoi okrujnosti = " << r2 << endl;
-        cout << "Ploseadi treugolinica = " << s << endl;
-         break;
-    }
+    if ((m == 1) && (n == 14)){
+            cout << "Pikovyi tuz" << endl;
+        }
 
-case 4:
-    {
-         cout << "Ploseadi treugolinica = " << s << endl;
-          break;
-    }
-default:
-    cout << "Vy vveli nevernoe znacenie" << endl;
-}
+    if ((m == 2) && (n == 11)){
+            cout << "Trefovyi valet" << endl;
+        }
+
+    if ((m == 2) && (n == 12)){
+            cout << "Trefovaia dama" << endl;
+        }
+
+    if ((m == 2) && (n == 13)){
+            cout << "Trefovyi koroli" << endl;
+        }
+
+    if ((m == 2) && (n == 14)){
+            cout << "Trefovyi tuz" << endl;
+        }
+
+    if ((m == 3) && (n == 11)){
+            cout << "Bubnovyi valet" << endl;
+        }
+
+    if ((m == 3) && (n == 12)){
+            cout << "Bubnovaia dama" << endl;
+        }
+
+    if ((m == 3) && (n == 13)){
+            cout << "Bubnovyi koroli" << endl;
+        }
+
+    if ((m == 3) && (n == 14)){
+            cout << "Bubnovyi tuz" << endl;
+        }
+
+    if ((m == 4) && (n == 11)){
+            cout << "Cirvovyi valet" << endl;
+        }
+
+    if ((m == 4) && (n == 12)){
+            cout << "Cirvovaia dama" << endl;
+        }
+
+    if ((m == 4) && (n == 13)){
+            cout << "Cirvovyi koroli" << endl;
+        }
+
+    if ((m == 4) && (n == 14)){
+            cout << "Cirvovyi tuz" << endl;
+        }
 }
