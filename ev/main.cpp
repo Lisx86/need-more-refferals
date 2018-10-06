@@ -1,13 +1,25 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 int main()
 {
-    float n;
-    cout << "Vvedite tsenu 1 kg konfet" << endl;
-    cin >> n;
+    int a;
+    cout << "Vvedite cislo" << endl;
+    cin >> a;
 
-    for (int k = 1; k <= 10; k++){
-        float x = n * k;
-        cout << k << " kg = " << x << " leev" << endl;
+    int b;
+    cout << "Vvedite cislo" << endl;
+    cin >> b;
+
+    int s = a;
+    for (int i = a; i <= b; i++){
+            int x = sqrt(i);
+        if (x - int(x) == 0) {
+                cout << x << endl;
+            s = s + i;
+
+        }
     }
+      // cout << s;
 }
+
