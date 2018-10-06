@@ -1,25 +1,15 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 int main()
 {
-    int a;
-    cout << "Vvedite cislo" << endl;
-    cin >> a;
+    int n;
+    cout << "Vvedite n" << endl;
+    cin >> n;
 
-    int b;
-    cout << "Vvedite cislo" << endl;
-    cin >> b;
-
-    int s = a;
-    for (int i = a; i <= b; i++){
-            int x = sqrt(i);
-        if (x - int(x) == 0) {
-                cout << x << endl;
-            s = s + i;
-
-        }
+    for (int i = 1; i <= n; i++){
+        int k;
+        k = n*n;
+        k = 1 + (2*n-1);
+        cout<<k<<" ";
     }
-      // cout << s;
 }
-
