@@ -14,5 +14,5 @@ int main()
         cout << i << ", ";
         k++;
     }
-    cout << endl << endl << k << " cisla";
+    cout << endl << endl << k << " cisla" ;
 }
