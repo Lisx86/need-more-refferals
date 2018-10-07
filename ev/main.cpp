@@ -10,6 +10,7 @@ int main()
         int k;
         k = n*n;
         k = 1 + (2*n-1);
-        cout<<k<<" ";
+        cout<<k;
     }
+    return 0;
 }
