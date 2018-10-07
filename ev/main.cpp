@@ -11,6 +11,7 @@ int main()
         k = n*n;
         k = 1 + (2*n-1);
         cout<<k;
+        gggg
     }
     return 0;
 }
