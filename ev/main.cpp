@@ -3,13 +3,13 @@
 using namespace std;
 int main()
 {
-    int k;
-    cout << "Vvedite stepeni k : " << endl;
-    cin >> k;
+    int n;
+    cout << "Vvedite cislo n : " << endl;
+    cin >> n;
 
     float s = 0;
-    for (int n = 1; n <= 100; n++){
-        s += pow(n,k);
+    for (int i = 1; i <= n; i++){
+        s += pow(i, i);
     }
-    cout << s << " - summa" << endl;
+    cout << s << endl;
 }
