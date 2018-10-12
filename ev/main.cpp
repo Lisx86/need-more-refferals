@@ -2,17 +2,22 @@
 using namespace std;
 int main()
 {
-    float a, b;
-    cout << "Vvedite a: " << endl;
-    cin >> a;
-    cout << "Vvedite b: " << endl;
-    cin >> b;
+    int x1, x2, x3;
+    cout << "Vvedite koordinati to4ki A : " << endl;
+    cin >> x1;
+    cout << "Vvedite koordinati to4ki B: " << endl;
+    cin >> x2;
+    cout << "Vvedite koordinati to4ki C: " << endl;
+    cin >> x3;
 
-    if (a > b) {
-        float c = a;
-        a = b;
-        cout << a << " : naimenisee znacenie" << endl;
-        cout << c << " : naibolisee znacenie" << endl;
-
+    if ((x2 > x3) && (x2 < x1) || (x2 > x1)) {
+        cout << "To4ka C (" << x3 <<") Nahoditsea blije k to4ke A" << endl;
+        int r = x3 - x1;
+        cout << "Rasstoianie ot to4ki C do to4ki A = " << r;
+    }
+    else {
+        cout << "To4ka B (" << x2 <<") Nahoditsea blije k to4ke A" << endl;
+        int r = x2 - x1;
+         cout << "Rasstoianie ot to4ki B do to4ki A = " << r;
     }
 }
