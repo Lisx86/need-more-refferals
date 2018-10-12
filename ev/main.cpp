@@ -7,8 +7,10 @@ int main()
     cin >> n;
 
     float f;
+    float x;
     for (int i = 1; i <= n; i++){
         f = i*(i+1);
+        x = 1 + 1/f;
     }
-    cout << f << " - factorial" << endl;
+    cout << x <<  endl;
 }
