@@ -2,22 +2,20 @@
 using namespace std;
 int main()
 {
-    int x1, x2, x3;
-    cout << "Vvedite koordinati to4ki A : " << endl;
-    cin >> x1;
-    cout << "Vvedite koordinati to4ki B: " << endl;
-    cin >> x2;
-    cout << "Vvedite koordinati to4ki C: " << endl;
-    cin >> x3;
+    int x, y;
+    cout << "Vvedite koordinati to4ki : " << endl;
+    cin >> x;
+    cin >> y;
 
-    if ((x2 > x3) && (x2 < x1) || (x2 > x1)) {
-        cout << "To4ka C (" << x3 <<") Nahoditsea blije k to4ke A" << endl;
-        int r = x3 - x1;
-        cout << "Rasstoianie ot to4ki C do to4ki A = " << r;
+    if ((x == 0) && (y == 0)) {
+        cout << endl << "0" << endl;
     }
-    else {
-        cout << "To4ka B (" << x2 <<") Nahoditsea blije k to4ke A" << endl;
-        int r = x2 - x1;
-         cout << "Rasstoianie ot to4ki B do to4ki A = " << r;
+
+    if (((x == 0) && (y != 0)) || ((x != 0) && (y == 0))) {
+        cout << endl << "2" << endl;
+    }
+
+    if ((x != 0) && (y != 0)) {
+        cout << endl << "3" << endl;
     }
 }
