@@ -2,21 +2,19 @@
 using namespace std;
 int main()
 {
-    float x;
-    cout << "Vvedite x : " << endl;
+    int x;
+    cout << "Vvedite god : " << endl;
     cin >> x;
 
-    if (x < 0) {
-        int fx = 0;
-        cout << "fx = " << fx << endl;
+    if ((x % 4 == 0) && (x % 100 != 0) && (x % 400 == 0)){
+        cout << x << " Visokosnii god i v nem 366 dnei" << endl;
+    }
+    if ((x % 100 == 0) && (x % 400 != 0)){
+        cout << x << " Nevisokosnii god i v nem 365 dnei" << endl;
     }
 
-    int fx = 0;
-    for (int x = 0; x <= 100; x++){
-        if (x % 2 == 0){
-                fx = 1;
-        }
+    else {
+        cout << x << " Nevisokosnii god i v nem 365 dnei" << endl;\
     }
-    cout << "fx = " << fx << endl;
- }
 
+}
