@@ -1,20 +1,17 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 int main()
 {
-    float x;
+    int x;
     cout << "Vvedite x : " << endl;
     cin >> x;
 
-    if (x > 0){
-        float fx = 2 * sin(x);
+    if ((x < -2) || (x > 2)){
+        int fx = 2 * x;
         cout << "fx = " << fx << endl;
     }
-
-    if (x <= 0){
-        float fx = 6 - x;
-        cout << "fx = " << fx <<
-        endl;
+    else {
+        int fx = -3 * x;
+        cout << "fx = " << fx << endl;
     }
 }
