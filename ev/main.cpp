@@ -1,16 +1,15 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Vvedite n : " << endl;
-    cin >> n;
+    int k;
+    cout << "Vvedite stepeni k : " << endl;
+    cin >> k;
 
-    float f;
-    float x;
-    for (int i = 1; i <= n; i++){
-        f = i*(i+1);
-        x = 1 + 1/f;
+    float s = 0;
+    for (int n = 1; n <= 100; n++){
+        s += pow(n,k);
     }
-    cout << x <<  endl;
+    cout << s << " - summa" << endl;
 }
