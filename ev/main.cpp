@@ -2,16 +2,17 @@
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Vvedite n" << endl;
-    cin >> n;
+    float a, b;
+    cout << "Vvedite a: " << endl;
+    cin >> a;
+    cout << "Vvedite b: " << endl;
+    cin >> b;
 
-    for (int i = 1; i <= n; i++){
-        int k;
-        k = n*n;
-        k = 1 + (2*n-1);
-        cout<<k;
-        gggg
+    if (a > b) {
+        float c = a;
+        a = b;
+        cout << a << " : naimenisee znacenie" << endl;
+        cout << c << " : naibolisee znacenie" << endl;
+
     }
-    return 0;
 }
